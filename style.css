@@ -1,0 +1,109 @@
+/* normalize css */
+*,::after,::before{box-sizing:border-box}html{font-family:system-ui,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji';line-height:1.15;-webkit-text-size-adjust:100%;tab-size:4}body{margin:0}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-color:currentcolor}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}legend{padding:0}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}
+
+
+body {
+	background: rgb(0,0,0);
+	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(47,46,46,1) 75%, rgba(47,46,46,1) 55%, rgba(0,0,0,1) 100%);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+main {
+	padding: 0 3vh;
+	text-align: center;
+	margin-top: 15vh;
+}
+
+main .main__money{
+	display: flex;
+	justify-content: center;
+}
+main .main__money img {
+	width: 6vh;
+	height: auto;
+}
+main .main__money .main_money-amount {
+	margin-left: 2vh;
+	display: flex;
+	color: white;
+	font-size: 5vh;
+	align-items: center;
+}
+
+main .main__usdt-eqv {
+	display: flex;
+	justify-content: center;
+	color: rgb(147, 141, 141);
+}
+main .main__usdt-eqv .main__usdt-value {
+	margin-top: 1vh;
+	font-size: 2vh;
+}
+
+main .main__coin {
+	height: 35vh;
+}
+main .main__coin img {
+	margin-top: 6vh;
+	width: 30vh;
+	transition-duration: 0.01s;
+}
+main .main__coin img.animated {
+	margin-top: 6vh;
+	width: 32vh;
+	transition-duration: 0.03s;
+}
+
+.nav__wrapper {
+	margin: 10vh 3vh 0 3vh;
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 100%;
+}
+nav {
+	padding: 0 2vh;
+	height: 15vh;
+	color: white;
+	font-size: 2vh;
+	background-color: rgb(41, 41, 41);
+	border-radius: 3vh;
+}
+nav img {
+	width: 5vh;
+}
+nav .nav__sep {
+	height: inherit;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 10vh;
+	font-weight: 100;
+	color: rgb(147, 141, 141);
+}
+nav .nav__buttons {
+	height: inherit;
+	display: flex; 
+	justify-content: space-between;
+	align-items: center;
+}
+nav .nav__button {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+nav .nav__button .nav__button-text p{
+	margin: 1vh;
+}
+
+footer {
+	text-align: center;
+	color: rgba(147, 141, 141, 0.3);
+	font-size: 2vh;
+}
