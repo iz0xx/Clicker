@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	
 	coin_img.addEventListener('touchstart', () => {
 		animate_coin(coin_img)
-		setTimeout(() => {
-			animate_coin(coin_img)
-		}, 0.03);
+	})
+	coin_img.addEventListener('touchend', () => {
+		animate_coin(coin_img)
 	})
 })
