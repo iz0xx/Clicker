@@ -55,7 +55,7 @@ main .main__coin img {
 }
 main .main__coin img.animated {
 	margin-top: 6vh;
-	width: 32vh;
+	width: 27vh;
 	transition-duration: 0.03s;
 }
 
