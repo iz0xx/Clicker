@@ -7,7 +7,7 @@ function animate_coin(coin_img) {
 document.addEventListener('DOMContentLoaded', () => {
 	const coin_img = document.querySelector('.main__coin img')
 	
-	coin_img.addEventListener('click', () => {
+	coin_img.addEventListener('touchstart', () => {
 		animate_coin(coin_img)
 		setTimeout(() => {
 			animate_coin(coin_img)
